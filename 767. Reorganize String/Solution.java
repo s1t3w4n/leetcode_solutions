@@ -1,9 +1,12 @@
+import java.util.Comparator;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.PriorityQueue;
+
 /**
  * Given a string s, rearrange the characters of s so that any two adjacent characters are not the same.
  *
  * Return any possible rearrangement of s or return "" if not possible.
- *
- *
  *
  * Example 1:
  *
@@ -13,7 +16,6 @@
  *
  * Input: s = "aaab"
  * Output: ""
- *
  *
  * Constraints:
  *
@@ -27,6 +29,25 @@ public class Solution {
     }
 
     public String reorganizeString(String s) {
-        return "";
+        HashMap<Character, Integer> map = new HashMap<>();
+        for (char c : s.toCharArray()) {
+            map.put(c, map.getOrDefault(c, 0) + 1);
+        }
+        PriorityQueue<Character> que = new PriorityQueue<>((a, b) -> map.get(b) - map.get(a));
+        que.addAll(map.keySet());
+        if (map.get(que.peek()) > (s.length() + 1) / 2) {
+            return "";
+        }
+        char[] result = new char[s.length()];
+        int i = 0;
+        while (!que.isEmpty()) {
+            char c = que.poll();
+            for (int j = 0; j < map.get(c); j++) {
+                if (i >= s.length()) i = 1;
+                result[i] = c;
+                i += 2;
+            }
+        }
+        return new String(result);
     }
 }
