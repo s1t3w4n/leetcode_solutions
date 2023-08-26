@@ -1,7 +1,5 @@
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
-import java.util.List;
 
 /**
  * You are given an array of n pairs pairs where pairs[i] = [lefti, righti] and lefti < righti.
