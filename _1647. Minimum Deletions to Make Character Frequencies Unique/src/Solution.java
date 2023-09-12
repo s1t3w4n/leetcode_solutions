@@ -1,6 +1,4 @@
 import java.util.*;
-import java.util.function.Function;
-import java.util.stream.Collectors;
 
 /**
  * A string s is called good if there are no two different characters in s that have the same frequency.
