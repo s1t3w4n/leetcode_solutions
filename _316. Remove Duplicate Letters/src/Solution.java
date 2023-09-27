@@ -1,7 +1,3 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-
 /**
  * Given a string s, remove duplicate letters so that every letter appears once and only once. You must make sure your result is
  * the smallest in lexicographical order
