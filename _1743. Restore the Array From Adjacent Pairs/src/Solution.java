@@ -43,12 +43,12 @@ public class Solution {
                 new int[]{3, 4}
         })));
         System.out.println(Arrays.toString(new Solution().restoreArray(new int[][]{
-                new int[]{4,-2},
-                new int[]{1,4},
-                new int[]{-3,1}
+                new int[]{4, -2},
+                new int[]{1, 4},
+                new int[]{-3, 1}
         })));
         System.out.println(Arrays.toString(new Solution().restoreArray(new int[][]{
-                new int[]{100000,-100000}
+                new int[]{100000, -100000}
         })));
     }
 
