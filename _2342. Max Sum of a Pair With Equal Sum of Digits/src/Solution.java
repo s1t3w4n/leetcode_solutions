@@ -34,6 +34,7 @@ public class Solution {
         System.out.println(new Solution().maximumSum(new int[]{10, 12, 19, 14})); // -1
         System.out.println(new Solution().maximumSum(new int[]{368, 369, 307, 304, 384, 138, 90, 279, 35, 396, 114, 328, 251, 364, 300, 191, 438, 467, 183})); // 835
         System.out.println(new Solution().maximumSum(new int[]{383, 77, 97, 261, 102, 344, 150, 130, 55, 337, 401, 498, 21, 5})); // 460
+        System.out.println(new Solution().maximumSum(new int[]{229, 398, 269, 317, 420, 464, 491, 218, 439, 153, 482, 169, 411, 93, 147, 50, 347, 210, 251, 366, 401})); // 973
     }
 
     public int maximumSum(int[] nums) {
