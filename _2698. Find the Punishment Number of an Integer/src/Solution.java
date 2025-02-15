@@ -46,25 +46,25 @@ public class Solution {
 
     public int punishmentNumber(int num) {
         int sum = 0;
-        for (int n = 1; n <= num; n++) {
-            int part = n * n;
-            if (isPunishmentPart(String.valueOf(part), n)) {
+        for (int i = 1; i <= num; i++) {
+            int part = i * i;
+            if (isPunishmentPart(String.valueOf(part), i)) {
                 sum += part;
             }
         }
         return sum;
     }
 
-    private boolean isPunishmentPart(String n, int goal) {
+    private boolean isPunishmentPart(String potentialPart, int goal) {
         if (goal < 0) {
             return false;
         }
-        if (n.isEmpty() && goal == 0) {
+        if (potentialPart.isEmpty() && goal == 0) {
             return true;
         }
-        for (int i = 0; i < n.length(); i++) {
-            int left = Integer.parseInt(n.substring(0, i + 1));
-            String right = n.substring(i + 1);
+        for (int i = 0; i < potentialPart.length(); i++) {
+            int left = Integer.parseInt(potentialPart.substring(0, i + 1));
+            String right = potentialPart.substring(i + 1);
             if (isPunishmentPart(right, goal - left)) {
                 return true;
             }
