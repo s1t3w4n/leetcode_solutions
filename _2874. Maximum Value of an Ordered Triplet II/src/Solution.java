@@ -29,14 +29,14 @@
  * 3 <= nums.length <= 100
  * 1 <= nums[i] <= 10^6
  */
-public class Solution2 {
+public class Solution {
     public static void main(String[] args) {
         // 77
-        System.out.println(new Solution2().maximumTripletValue(new int[]{12, 6, 1, 2, 7}));
+        System.out.println(new Solution().maximumTripletValue(new int[]{12, 6, 1, 2, 7}));
         // 133
-        System.out.println(new Solution2().maximumTripletValue(new int[]{1, 10, 3, 4, 19}));
+        System.out.println(new Solution().maximumTripletValue(new int[]{1, 10, 3, 4, 19}));
         // 0
-        System.out.println(new Solution2().maximumTripletValue(new int[]{1, 2, 3}));
+        System.out.println(new Solution().maximumTripletValue(new int[]{1, 2, 3}));
         // 999999000000
         System.out.println(new Solution().maximumTripletValue(new int[]{1000000, 1, 1000000}));
     }
