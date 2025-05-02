@@ -48,8 +48,7 @@ public class Solution {
         boolean isFalling = false;
         StringBuilder res = new StringBuilder();
         for (int i = 0; i < n; i++) {
-            char c = dominoes.charAt(i);
-            switch (c) {
+            switch (dominoes.charAt(i)) {
                 case '.' -> count++;
                 case 'R' -> {
                     if (isFalling) {
