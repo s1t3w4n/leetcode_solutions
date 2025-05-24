@@ -48,7 +48,6 @@ public class Solution {
                 result.add(i);
             }
         }
-        System.gc();
         return result;
     }
 }
