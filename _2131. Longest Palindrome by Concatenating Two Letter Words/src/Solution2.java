@@ -58,7 +58,7 @@ public class Solution2 {
             String word = candidate.getKey();
             String reversed = new StringBuilder(word).reverse().toString();
             if (word.equals(reversed)) {
-                count += (candidate.getValue() / 2) * 4;
+                count += candidate.getValue() / 2 * 4;
                 if (!singlePalindrome && candidate.getValue() % 2 == 1) {
                     singlePalindrome = true;
                 }
