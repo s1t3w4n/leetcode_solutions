@@ -68,7 +68,7 @@ public class Solution {
         Map<Character, Character> map = relations.entrySet().stream().collect(Collectors.toMap(Map.Entry::getKey, e -> e.getValue().stream().sorted().findFirst().orElse('a')));
         StringBuilder result = new StringBuilder();
         for (int i = 0; i < baseStr.length(); i++) {
-            result.append(map.getOrDefault(baseStr.charAt(i),baseStr.charAt(i)));
+            result.append(map.getOrDefault(baseStr.charAt(i), baseStr.charAt(i)));
         }
         return result.toString();
     }
